@@ -2,7 +2,12 @@ package com.javaGenerics;
 import java.util.Scanner;
 
 	public class MaxUsingGenerics<T extends Comparable<T>>  {
-
+/**
+ * This class is made to calculate arithmatic operations and generics are used
+ * @author abhishek
+ *
+ * @param <T>
+ */
 		T A,B,C,D;
 		public MaxUsingGenerics(T A, T B, T C,T D) {
 			this.A=A;
@@ -10,6 +15,7 @@ import java.util.Scanner;
 			this.C=C;
 			this.D=D;
 		}
+		
 		public T maxThreeInterFloatString() {
 			return MaxUsingGenerics.maximum(A, B, C);
 		}
@@ -104,7 +110,8 @@ import java.util.Scanner;
 		 * UC5
 		 * 
 		 */
-		
+		 /**
+     
 		public static <T>void printMax(T a,T B,T C,T max) {
 			System.out.println("This max element is : "+max);
 		}
